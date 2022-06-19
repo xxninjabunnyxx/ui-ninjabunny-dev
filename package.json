@@ -1,12 +1,13 @@
 {
-  "name": "ui-ninjabunny-dev",
+  "name": "@xxninjabunnyxx/ui",
   "version": "0.0.1",
   "description": "Personal UI library",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "build-lib": "rollup -c rollup.config.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   "homepage": "https://github.com/xxninjabunnyxx/ui-ninjabunny-dev#readme",
   "devDependencies": {
     "@babel/core": "^7.18.5",
+    "@babel/preset-react": "^7.17.12",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@storybook/addon-actions": "^6.5.9",
     "@storybook/addon-essentials": "^6.5.9",
@@ -34,7 +36,8 @@
     "react-dom": "^18.2.0",
     "rollup": "^2.75.6",
     "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-peer-deps-external": "^2.2.4"
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2"
   },
   "peerDependencies": {
     "react": "^18.2.0",
